@@ -21,8 +21,6 @@ Os exercícios deste repositório exploram tópicos como:
 - Manipulação de variáveis e operadores aritméticos/lógicos
 - Vetores (arrays)
 
-## Como compilar e executar
-
 ## Observações
 
 Este é um repositório de **estudos**, então o código pode não seguir todas as boas práticas de um projeto profissional — o foco aqui é o aprendizado e a fixação dos conceitos básicos da linguagem C.
