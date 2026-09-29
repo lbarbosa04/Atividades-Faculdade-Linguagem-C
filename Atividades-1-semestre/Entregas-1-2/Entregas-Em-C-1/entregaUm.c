@@ -1,6 +1,6 @@
+// 1 = Escreva um aplicativo em C mostra todos os números impares de 1 a 100
 #include <stdio.h>
 
-//Codigo que mostre todos os numeros PAR de 1 a 100
 int main() {
    int x;
 
@@ -11,7 +11,10 @@ int main() {
     }
 }
 
-//Leia um numero e verifique se ele é primo
+
+// 2 = Leia um numero e verifique se ele é um número primo
+#include <stdio.h>
+
 int main() {
     int n, i, ePrimo = 1;
 
@@ -38,7 +41,10 @@ int main() {
     return 0;
 }
 
-//Peça um numero ao usuario e e mostre a sua tabuada completa de i a 10 
+
+// 3 = Escreva um programa que pergunta um número ao usuário, e mostra sua tabuada completa (de 1 até 10) 
+#include <stdio.h>
+
 int main() {
     int numero, x, j, y, z, resultado;
 
@@ -62,7 +68,12 @@ int main() {
     }
 }
 
-//Peça dez numeros ao usuario atraves do while e no final mostre o maior
+
+/* 4 = Escreva um programa em C que solicita 10 números ao usuário, através de um laço while, e ao final mostre
+qual destes números é o maior.
+*/
+#include <stdio.h>
+
 int main() {
     int numero, i = 1, maior;
 
@@ -87,7 +98,10 @@ int main() {
     return 0;
 }
 
-//escreva um programa em c que leia 10 numeros e escreva a diferença entre o maior e o menor valor lido
+
+// 5 = Escreva um programa em C que leia 10 números e escreva a diferença entre a maior e o menor valor dito.
+#include <stdio.h>
+
 int main() {
 
     int numero, maior, menor, i;
@@ -117,7 +131,10 @@ int main() {
     return 0;
 }
 
-//Faça um programa que imprime todos os divisores de um numero inteiro e positivo
+
+// 6 = Faça um programa que imprime todos os divisores de um número inteiro positivo.
+#include <stdio.h>
+
 int main() {
     int numero;
 
