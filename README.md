@@ -29,4 +29,4 @@ Este é um repositório de **estudos**, então o código pode não seguir todas 
 
 ## Autor
 
-Feito com dedicação durante o primeiro semestre da faculdade. 📚💻
+📚 Feito com dedicação durante o primeiro semestre da faculdade. 
