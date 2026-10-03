@@ -1,10 +1,10 @@
 <h1 align="center">Entrega Dois do Primeiro Setemestre</h1>
 
-## 💻 Entregas
+# 💻 Entregas
 Atvividades feitas com a linguagem **C**
 
-## 📚 Arduino
+# 📚 Arduino
 É uma plataforma de prototipagem eletrônica de código aberto que junta hardware (uma placa com um microcontrolador) e software (um programa para escrever códigos) 
 
-## 💻 Entrega Final
-No final do periodo do primeiro semestre.2 é feito um sistema comforme o professor solicita, esse será um **PROJETO FINAL: SISTEMA DE ANÁLISE DE DESEMPENHO ESCOLAR E CONSULTA**
+# 💻 Entrega Final
+No final do periodo do primeiro semestre.2 é feito um sistema comforme o professor solicita, esse será um **SISTEMA DE ANÁLISE DE DESEMPENHO ESCOLAR E CONSULTA**
