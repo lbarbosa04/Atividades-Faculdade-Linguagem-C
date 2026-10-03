@@ -1,4 +1,4 @@
-# Atividades de Programação em C — 1º Semestre
+<h1 align="center">Atividades de Programação em C — 1º Semestre</h1>
 
 ## Sobre este repositório
 
