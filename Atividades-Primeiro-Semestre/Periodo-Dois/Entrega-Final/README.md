@@ -1,7 +1,7 @@
 <h1 align="center">Entrega Final</h1>
 
 ## 🎯 Objetivo do Projeto
-Desenvolver uma aplicação em Linguagem **C** para efetuar o registro de alunos e das respectivas notas finais, processar dados estatísticos da turma e permitir a consulta individal por nome. O projeto tem como finalidade consolidar os conceitos fundamentais de lógica de programação utilizando **exclusivamente estruturas condicionais (if/else), laços de repetição (FOR, WHILE, DO-WHILE) e VETORES (unidimensionais e paralelos para strings)
+Desenvolver uma aplicação em Linguagem **C** para efetuar o registro de alunos e das respectivas notas finais, processar dados estatísticos da turma e permitir a consulta individal por nome. O projeto tem como finalidade consolidar os conceitos fundamentais de lógica de programação utilizando exclusivamente estruturas condicionais (if/else), laços de repetição (FOR, WHILE, DO-WHILE) e VETORES (unidimensionais e paralelos para strings)
 
 ## 📌 Requisitos Técnicos e Escopo
 O projeto deve cumprir rigorosamente as seguintes restrições técnicas:
@@ -55,11 +55,11 @@ registo.
 O programa deve ser gerido por um menu principal em laço do-while e estrutura switch-
 case com as seguintes opções:
 
-**1** Registar Alunos e Notas
+**1** Registrar Alunos e Notas
 
 **2** Exibir Relatório Geral (Média, Maior e Menor nota)
 
-**3** Listar Alunos Aprovados / Em Recuperação
+**3** Listar Alunos Aprovados Reporvados e em Recuperação
 
 **4** Procurar Aluno por Nome
 
