@@ -1,4 +1,4 @@
-<h1 align="center">Atividades de Programação em C — 1º Semestre</h1>
+<h1 align="center">Atividades de Programação em C - 1º Semestre</h1>
 
 ## Sobre este repositório
 
@@ -25,7 +25,8 @@ Os exercícios deste repositório exploram tópicos como:
 
 ## Observações
 
-Este é um repositório de **estudos**, então o código pode não seguir todas as boas práticas de um projeto profissional — o foco aqui é o aprendizado e a fixação dos conceitos básicos da linguagem C.
+Este é um repositório de **estudos**, então o código pode não seguir todas as boas práticas de um projeto profissional — o foco aqui 
+é o aprendizado e a fixação dos conceitos básicos da linguagem C.
 
 ## Autor
 
