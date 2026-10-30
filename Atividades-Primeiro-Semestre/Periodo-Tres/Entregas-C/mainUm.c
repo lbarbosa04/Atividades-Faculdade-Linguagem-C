@@ -73,7 +73,8 @@ int main()
     return 0;
 }
 
-/*Crie uma função que receba um vetor com 5 números inteiros e retorne a soma dos elementos*/
+/* 3 = Crie uma função que receba um vetor com 5 números inteiros e retorne a soma dos elementos*/
+
 #include <stdio.h>
 
 #define MAX 5
@@ -97,6 +98,37 @@ int main()
     int numero[MAX]; 
     int resultado = somaVetor(numero);
     printf("Soma: %d", resultado);
+
+    return 0;
+}
+
+/* 4 = Crie uma função que receba um vetor de 10 números inteiros e retorne o menor elemento do vetor*/
+
+#include <stdio.h>
+
+#define MAX 10
+
+int menor(int numero[MAX]){
+    
+    int menorNumero;
+    
+    for(int x = 0; x < 10; x ++){
+        printf("Digite o numero: ");
+        scanf("%d", &numero[x]);
+        
+        if(x == 0 || numero[x] < menorNumero){
+            menorNumero = numero[x];
+        }
+        
+    }
+    return menorNumero;
+}
+
+int main()
+{
+    int numero[MAX]; 
+    int resultado = menor(numero);
+    printf("Menor Número: %d", resultado);
 
     return 0;
 }
