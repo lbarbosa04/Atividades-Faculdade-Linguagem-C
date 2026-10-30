@@ -54,12 +54,7 @@ void numeroPar(int numero[MAX]){
     
     int i = 0;
     
-    for(int x = 2; x <= 20; x ++){
-        if(x % 2 == 0){
-        numero[i] = x;
-        i ++;
-        }
-    }
+
 }
 
 void printar(int numero[MAX]){
@@ -74,6 +69,34 @@ int main()
     int numero[MAX]; 
     numeroPar(numero);
     printar(numero);
+
+    return 0;
+}
+
+/*Crie uma função que receba um vetor com 5 números inteiros e retorne a soma dos elementos*/
+#include <stdio.h>
+
+#define MAX 5
+
+int somaVetor(int numero[MAX]){
+    
+    int soma = 0;
+    
+    for(int x = 0; x < 5; x ++){
+        printf("Digite o numero: ");
+        scanf("%d", &numero[x]);
+        soma += numero[x];
+    }
+    
+    return soma;
+    
+}
+
+int main()
+{
+    int numero[MAX]; 
+    int resultado = somaVetor(numero);
+    printf("Soma: %d", resultado);
 
     return 0;
 }
