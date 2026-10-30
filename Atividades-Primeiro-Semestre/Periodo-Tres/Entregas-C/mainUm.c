@@ -53,8 +53,13 @@ No main, preencha o vetor com os números pares de 2 a 20 e chama a função par
 void numeroPar(int numero[MAX]){
     
     int i = 0;
-    
 
+    for(int x = 2; x <= 20; x ++){
+        if(x % 2 == 0){
+        numero[i] = x;
+        i ++;
+        }
+    }
 }
 
 void printar(int numero[MAX]){
