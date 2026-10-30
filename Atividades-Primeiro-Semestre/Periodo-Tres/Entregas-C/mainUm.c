@@ -19,9 +19,8 @@ orientações:
 
 #define MAX 2
 
-int numeroMaior(int valorUm, int valorDois){
-    
-    int numero[MAX];
+int numeroMaior(int numero[MAX]){
+
     int maior = 0;
     
     for(int x = 0; x < MAX; x ++){
@@ -36,9 +35,45 @@ int numeroMaior(int valorUm, int valorDois){
 
 int main()
 {
+    int numero;
     
-    int maior = numeroMaior(1 , 2);
+    int maior = numeroMaior(numero);
     printf("Numero maior: %d", maior);
     
+    return 0;
+}
+
+/* 2 = Crie uma função que receba um vetor de 10 números inteiros e exiba todos os elementos do vetor
+No main, preencha o vetor com os números pares de 2 a 20 e chama a função para imprimir o vetor */
+
+#include <stdio.h>
+
+#define MAX 10
+
+void numeroPar(int numero[MAX]){
+    
+    int i = 0;
+    
+    for(int x = 2; x <= 20; x ++){
+        if(x % 2 == 0){
+        numero[i] = x;
+        i ++;
+        }
+    }
+}
+
+void printar(int numero[MAX]){
+    
+    for(int x = 0; x < 10; x ++){
+        printf("\nNumero: %d", numero[x]);
+    }
+}
+
+int main()
+{
+    int numero[MAX]; 
+    numeroPar(numero);
+    printar(numero);
+
     return 0;
 }
