@@ -19,14 +19,17 @@ orientações:
 
 #define MAX 2
 
-int numeroMaior(int numero[MAX]){
+int numeroMaior(int numero[MAX])
+{
 
     int maior = 0;
-    
-    for(int x = 0; x < MAX; x ++){
+
+    for (int x = 0; x < MAX; x++)
+    {
         printf("Digite um numero: ");
         scanf("%d", &numero[x]);
-        if(numero[x] > maior){
+        if (numero[x] > maior)
+        {
             maior = numero[x];
         }
     }
@@ -36,10 +39,10 @@ int numeroMaior(int numero[MAX]){
 int main()
 {
     int numero;
-    
+
     int maior = numeroMaior(numero);
     printf("Numero maior: %d", maior);
-    
+
     return 0;
 }
 
@@ -50,28 +53,33 @@ No main, preencha o vetor com os números pares de 2 a 20 e chama a função par
 
 #define MAX 10
 
-void numeroPar(int numero[MAX]){
-    
+void numeroPar(int numero[MAX])
+{
+
     int i = 0;
 
-    for(int x = 2; x <= 20; x ++){
-        if(x % 2 == 0){
-        numero[i] = x;
-        i ++;
+    for (int x = 2; x <= 20; x++)
+    {
+        if (x % 2 == 0)
+        {
+            numero[i] = x;
+            i++;
         }
     }
 }
 
-void printar(int numero[MAX]){
-    
-    for(int x = 0; x < 10; x ++){
+void printar(int numero[MAX])
+{
+
+    for (int x = 0; x < 10; x++)
+    {
         printf("\nNumero: %d", numero[x]);
     }
 }
 
 int main()
 {
-    int numero[MAX]; 
+    int numero[MAX];
     numeroPar(numero);
     printar(numero);
 
@@ -84,23 +92,24 @@ int main()
 
 #define MAX 5
 
-int somaVetor(int numero[MAX]){
-    
+int somaVetor(int numero[MAX])
+{
+
     int soma = 0;
-    
-    for(int x = 0; x < 5; x ++){
+
+    for (int x = 0; x < 5; x++)
+    {
         printf("Digite o numero: ");
         scanf("%d", &numero[x]);
         soma += numero[x];
     }
-    
+
     return soma;
-    
 }
 
 int main()
 {
-    int numero[MAX]; 
+    int numero[MAX];
     int resultado = somaVetor(numero);
     printf("Soma: %d", resultado);
 
@@ -113,27 +122,69 @@ int main()
 
 #define MAX 10
 
-int menor(int numero[MAX]){
-    
+int menor(int numero[MAX])
+{
+
     int menorNumero;
-    
-    for(int x = 0; x < 10; x ++){
+
+    for (int x = 0; x < 10; x++)
+    {
         printf("Digite o numero: ");
         scanf("%d", &numero[x]);
-        
-        if(x == 0 || numero[x] < menorNumero){
+
+        if (x == 0 || numero[x] < menorNumero)
+        {
             menorNumero = numero[x];
         }
-        
     }
     return menorNumero;
 }
 
 int main()
 {
-    int numero[MAX]; 
+    int numero[MAX];
     int resultado = menor(numero);
     printf("Menor Número: %d", resultado);
+
+    return 0;
+}
+
+/*Crie uma função que receba um vetor de 5 números inteiros e um numero a ser pesquisado.*/
+#include <stdio.h>
+
+#define MAX 5
+
+void Array(int numero[MAX]) {
+    
+    int i =0;
+    
+    for (int x = 0; x < MAX; x++) {
+        numero[i] = x;
+        i++;
+    }
+}
+
+int main() {
+    int numeros[MAX];
+    int numeroPesquisado;
+    int posicao = -1;
+
+    Array(numeros);
+
+    printf("Digite um numero: ");
+    scanf("%d", &numeroPesquisado);
+
+    for (int x = 0; x < MAX; x++) {
+        if (numeros[x] == numeroPesquisado) {
+            posicao = x;
+        }
+    }
+
+    if (posicao != -1) {
+        printf("Numero: %d\nPosicao: %d\n", numeroPesquisado, posicao);
+    } else {
+        printf("-1\n");
+    }
 
     return 0;
 }
