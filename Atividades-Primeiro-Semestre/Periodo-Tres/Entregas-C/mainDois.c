@@ -98,3 +98,50 @@ c = Encontre o aluno com a maior media geral
 d = Encontre o aluno com a menor media geral
 e = Para cada aluno diga se ele foi aprovado ou reprovado
 */
+
+#include <stdio.h>
+
+#define MAX_CADASTRO 2
+#define MAX_NOTAS 3
+
+typedef struct alunos {
+    char nome[30];
+    char curso[20];
+    float nota[MAX_NOTAS];
+    float somaNotas = 0;
+} aluno;
+
+int main()
+{
+    aluno alunos[MAX_CADASTRO];
+    float maiorNota = 0;
+    int indiceMaior = 0;
+
+    for (int x = 0; x < MAX_CADASTRO; x++) {
+        printf("\n--- Aluno %d ---\n", x + 1);
+
+        printf("Nome do aluno: ");
+        scanf(" %29[^\n]", alunos[x].nome);
+
+        printf("Nome do curso: ");
+        scanf(" %19[^\n]", alunos[x].curso);
+
+        for (int a = 0; a < MAX_NOTAS; a++) {
+            printf("Digite a nota %d: ", a + 1);
+            scanf("%f", &alunos[x].nota[a]);
+            somaNotas += alunos[x].notas[a];
+        }
+
+        if (x == 0 || alunos[x].nota[0] > maiorNota) {
+            maiorNota = alunos[x].nota[0];
+            indiceMaior = x;
+        }
+        
+    }
+
+    printf("\nMaior nota na primeira prova: %.2f\n", maiorNota);
+    printf("Aluno: %s\n", alunos[indiceMaior].nome);
+    printf("Curso: %s\n", alunos[indiceMaior].curso);
+
+    return 0;
+}
