@@ -33,7 +33,7 @@ printf("=== CADASTRO DE LIVROS ===\n");
 do {
 printf("\nNome do livro: ");
 fgets(livro.nome, sizeof(livro.nome), stdin);
-livro.nome[strcspn(livro.nome, "\n")] = '\0'; // Remove a quebra de linha do fgets
+livro.nome[strcspn(livro.nome, "\n")] = '\0'; 
 
 printf("Autor: ");
 fgets(livro.autor, sizeof(livro.autor), stdin);
